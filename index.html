@@ -2,18 +2,158 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的个人网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孟孟哒 | 个人主页</title>
     <style>
-        body{
-            text-align:center;
-            margin-top:100px;
-            font-family:Arial;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: #f0f2f5;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .hobbies {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .hobby-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 220px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .hobby-item:hover {
+            transform: translateY(-5px);
+        }
+        .hobby-item h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        .contact a:hover {
+            color: #0056b3;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>你好，这是我的个人网站</h1>
-    <p>我正在学习搭建个人网站</p>
-    <p>免费、简单、快速</p>
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="头像" class="avatar">
+            <h1>孟孟哒</h1>
+            <p class="subtitle">AI学习分享 | 篮球健身爱好者 | 河北工程大学</p>
+        </header>
+
+        <div class="section">
+            <h2>关于我</h2>
+            <p>毕业于河北工程大学。</p>
+            <p>热爱生活，喜欢篮球、健身、摄影，目前专注学习AI知识，持续分享AI学习内容。</p>
+        </div>
+
+        <!-- 我给你新加的 AI 内容分享板块 ✅ -->
+        <div class="section">
+            <h2>📚 AI 内容分享</h2>
+            <p>专注学习AI工具、AI提示词、AI实战技巧，持续更新干货内容。</p>
+            <br>
+            <ul style="padding-left:20px;">
+                <li>AI 基础入门教程</li>
+                <li>AI 提示词（Prompt）技巧</li>
+                <li>AI 工具实战使用方法</li>
+                <li>AI 学习日常记录</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>我的爱好</h2>
+            <div class="hobbies">
+                <div class="hobby-item">
+                    <h3>🏀 篮球</h3>
+                    <p>热爱篮球运动，擅长团队协作，享受赛场拼搏的快乐</p>
+                </div>
+                <div class="hobby-item">
+                    <h3>💪 健身</h3>
+                    <p>坚持规律健身，保持良好的身体状态和自律习惯</p>
+                </div>
+                <div class="hobby-item">
+                    <h3>📸 摄影</h3>
+                    <p>用镜头记录生活，捕捉美好瞬间</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <h2>联系我</h2>
+            <p>
+                <a href="https://www.xiaohongshu.com/user/profile/444993413" target="_blank">小红书</a>
+                <a href="https://www.douyin.com/user/mbx1221" target="_blank">抖音</a>
+                <a href="https://github.com/MMD1221-web" target="_blank">GitHub</a>
+                <a href="mailto:2432826604@qq.com">邮箱</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
